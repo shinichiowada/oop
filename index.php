@@ -6,12 +6,11 @@ class Car
     private $carNumber; // 車体番号
     private $carColor;  // カラー
 
-    // コンストラクタ
     public function __construct($carName, $carNumber, $carColor)
     {
-        $this->setName($carName);
-        $this->setNumber($carNumber);
-        $this->setColor($carColor);
+        $this->carName = $carName;
+        $this->carNumber = $carNumber;
+        $this->carColor = $carColor;
     }
 
     public function getName()
@@ -43,8 +42,8 @@ class Car
     {
         $this->carColor = $carColor;
     }
-
-    public function Infomation()
+    
+    public function infomation()
     {
         echo '車の車種:' . $this->getName() . '、車体番号:' . $this->getNumber() . '、カラー:' . $this->getColor() . 'です。';
     }
